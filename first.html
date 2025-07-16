@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Docker Magic</title>
-  </head>
-  <body>
-    <h1>Hello, Sashank! 🎉</h1>
-    <p>This is your first website... inside Docker!</p>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">Sashank Kumar</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+          <h1>Hi, I'm Sashank Kumar Welcome Here !</h1>
+         
+            
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+    I'm Sashank Kumar, a Computer Science graduate with a passion for creating sleek, user-friendly websites. I enjoy turning ideas into clean and responsive designs that not only look good but also work smoothly.
+  </p>
+  <p>
+    I'm always learning, building projects, and exploring new ways to improve my skills. I’m excited to start my journey in web development and contribute to meaningful digital experiences.
+  </p>
+                </div>
+                <div class="about-cube">
+                    <div class="cube">
+                        <div class="face front">JS</div>
+                        <div class="face back">3D</div>
+                        <div class="face right">CSS</div>
+                        <div class="face left">HTML</div>
+                        <div class="face top">WEB</div>
+                        <div class="face bottom">DEV</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card" data-tilt>
+                    <div class="project-img" style="background-image: url('https://picsum.photos/400/300?random=1');"></div>
+                    <h3>3D Website</h3>
+                    <p>A fully interactive 3D experience</p>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="project-img" style="background-image: url('https://picsum.photos/400/300?random=2');"></div>
+                    <h3>Web Game</h3>
+                    <p>Browser-based 3D game</p>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="project-img" style="background-image: url('https://picsum.photos/400/300?random=3');"></div>
+                    <h3>AR Experience</h3>
+                    <p>Augmented reality web app</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 3D Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
 </html>

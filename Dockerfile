@@ -1,5 +1,5 @@
-# Use Nginx (a web server) as base image
 FROM nginx:alpine
 
-# Copy your HTML file into the Nginx default web directory
 COPY first.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
+COPY script.js /usr/share/nginx/html/script.js
